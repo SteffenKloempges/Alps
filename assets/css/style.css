@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Poppins-Reg';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+section h2 {
+    text-align: center;
+}
+
+section ul {
+    list-style: none;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul .sold_out::after {
+    content: "- Sold Out";
+    color: red;
+    margin-left: 10px;
+}
+
+/* section ul .sold_out::first-letter {
+    color: red;
+    font-size: 40px;
+} */
+
+section ul li:nth-of-type(4)::after {
+    content: "- ONLY 4 SPOT AVAILABLE 🐶";
+    color: red;
+    margin-left: 10px;
+}
+
+section ul .available::after {
+    content: "- Available";
+    color: green;
+    margin-left: 10px;
+}
+
+section:nth-of-type(2) {
+    margin-top: 10vh;
+}
+
+section:nth-of-type(2) p {
+    font-family: 'Poppins-Reg';
+}
